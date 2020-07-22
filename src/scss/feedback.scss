@@ -101,7 +101,7 @@
     }
 }
 
-.form__decoration-1 {
+.feedback__decoration-1 {
     top: 0;
     right: -400px;
     @media (max-width: 992px) {
@@ -109,9 +109,16 @@
     }
 }
 
-.form__decoration-2 {
+.feedback__decoration-2 {
     left: -400px;
     @media (max-width: 992px) {
         left: -300px;
+    }
+}
+
+.feedback__decoration-3 {
+    left: -350px;
+    @media (max-width: 992px) {
+        left: -260px;
     }
 }

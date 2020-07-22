@@ -32,8 +32,9 @@ lazyShowFade('.decoration', 750, 750)
 $(document).ready(function(){
 
         parallax('.news__decoration', -60, 0.8)
-        parallax('.form__decoration-1', 0, 0.6)
-        parallax('.form__decoration-2', -40, 0.2)
+        parallax('.feedback__decoration-1', 0, 0.6)
+        parallax('.feedback__decoration-2', -40, 0.2)
+        parallax('.feedback__decoration-3', 90, 0.15)
 
         $('.hamburger').click(function(){
             $(this).toggleClass('hamburger_active')
