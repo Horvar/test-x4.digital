@@ -11,6 +11,8 @@ var ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const RemovePlugin = require('remove-files-webpack-plugin');
 
+// var Inputmask = require('inputmask');
+
 module.exports = {
     entry: './src/index.js',
     output: {

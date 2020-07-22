@@ -27,8 +27,39 @@
 .header__nav {
     margin: auto;
     padding-right: 38px;
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .header__sign-in {
     margin: auto 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    a {
+        color: inherit;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.header__hamburger {
+    display: none;
+    margin: auto 0 auto auto;
+    @media (max-width: 767px) {
+        display: flex;
+    }
+}
+
+.header__mobile-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    @media (max-width: 767px) {
+        display: block;
+    }
 }

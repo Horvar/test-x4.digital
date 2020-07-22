@@ -18,6 +18,23 @@
                 </ul>
             </nav>
             <div class="header__sign-in underline"><a href="#">Войти</a></div>
+            <!-- hamburger -->
+            <div class="header__hamburger hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
+            <!-- mobile-menu -->
+            <div class="header__mobile-menu mobile-menu">
+                <nav class="mobile-menu__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item_active"><a href="#">Новости</a></li>
+                        <li class="nav__item"><a href="#">Архив</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__sign-in"><a href="#">Войти</a></div>
+            </div>
         </div>
     </header>
 
@@ -48,10 +65,10 @@
                     <input class="feedback__input input" name="name" type="text" id="inputName" required>
                     <!-- email -->
                     <label class="feedback__label" for="inputEmail">Почта</label>
-                    <input class="feedback__input input" name="email" type="email" id="inputEmail" required>
+                    <input class="feedback__input input" name="email" type="text" id="inputEmail" required>
                     <!-- phone -->
                     <label class="feedback__label" for="inputEmail">Телефон</label>
-                    <input class="feedback__input input" name="email" type="text" id="inputEmail" required>
+                    <input class="feedback__input input" name="phone" type="text" id="inputEmail" required>
                     <!-- text -->
                     <label class="feedback__label" for="inputText">Текст</label>
                     <textarea class="feedback__textarea input" name="text" id="inputText" cols="30" rows="10"></textarea>

@@ -10,6 +10,9 @@
         &::before {
             content: '>';
             margin: 0 10px;
+            @media (max-width: 767px) {
+                margin: 0 4px;
+            }
         }
     }
     a {
@@ -17,6 +20,10 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 16px;
+        @media (max-width: 767px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
         &:hover {
             text-decoration: underline;
         }

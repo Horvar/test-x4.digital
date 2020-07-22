@@ -2,14 +2,35 @@
 
 .nav__list {
     display: flex;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .nav__item {
+    @media (max-width: 767px) {
+        text-align: center;
+    }
     & + & {
         margin-left: pxToVw(1920, 60px);
+        @media (max-width: 767px) {
+            margin-left: 0;
+            border-top: 1px solid $clrTheme1;
+        }
     }
     &_active {
         pointer-events: none;
         color: $clrTheme1;
+    }
+    a {
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: inherit;
+        @media (max-width: 767px) {
+            font-size: 18px;
+            padding: 10px 0;
+        }
     }
 }

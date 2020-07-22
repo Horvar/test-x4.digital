@@ -1,0 +1,31 @@
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 1px solid $clrFont2;
+    transform-origin: top;
+    transform: translateY(100%) rotateX(90deg);
+    transition: .3s ease-out;
+    &_active {
+        transform: translateY(100%) rotateX(0);
+        transition: .5s ease-out;
+    }
+}
+
+.mobile-menu__nav {
+    margin-bottom: 40px;
+}
+
+.mobile-menu__sign-in {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    a {
+        display: block;
+        color: inherit;
+        padding: 10px 0;
+    }
+}

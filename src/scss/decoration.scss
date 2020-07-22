@@ -1,4 +1,8 @@
 .decoration {
     position: absolute;
     z-index: -1;
+    opacity: 0;
+    @media (max-width: 768px) {
+        display: none;
+    }
 }

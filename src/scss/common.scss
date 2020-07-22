@@ -24,9 +24,6 @@
             transition: .5s ease-out;
         }
     }
-    a {
-        color: inherit;
-    }
 }
 
 .h1 {
@@ -34,6 +31,10 @@
     font-size: 44px;
     line-height: 51px;
     color: $clrFont2;
+    @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 38px;
+    }
 }
 
 .input {
