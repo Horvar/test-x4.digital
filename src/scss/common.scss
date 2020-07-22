@@ -1,0 +1,50 @@
+.container {
+    width: 1140px;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.underline {
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $clrTheme1;;
+        position: absolute;
+        bottom: 0;
+        transform: rotateY(90deg);
+        transition: .3s ease-out;
+    }
+    &:hover {
+        &::before {
+            transform: rotateY(0);
+            transition: .5s ease-out;
+        }
+    }
+    a {
+        color: inherit;
+    }
+}
+
+.h1 {
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 51px;
+    color: $clrFont2;
+}
+
+.input {
+    background: #FFFFFF;
+    border: 1px solid $clrFont2;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.parallax-slider {
+    object-fit: none;
+}

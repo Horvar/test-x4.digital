@@ -68,13 +68,13 @@ module.exports = {
                 ]
             }
         }),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         {from:'src/img', to:'img'},
-        //         // {from:'src/fonts', to:'fonts'},
-        //         // {from:'src/docs', to:'docs'}
-        //     ]
-        // }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {from:'src/img', to:'img'},
+                {from:'src/fonts', to:'fonts'},
+                // {from:'src/docs', to:'docs'}
+            ]
+        }),
         // new ImageminPlugin({ 
         //     test: /\.(jpe?g|png|gif|svg)$/i,
         //     // добавить опции про качество

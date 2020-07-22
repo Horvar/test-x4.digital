@@ -1,0 +1,15 @@
+.nav {}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    & + & {
+        margin-left: pxToVw(1920, 60px);
+    }
+    &_active {
+        pointer-events: none;
+        color: $clrTheme1;
+    }
+}

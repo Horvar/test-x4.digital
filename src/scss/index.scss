@@ -1,4 +1,18 @@
 @import 'variables.scss';
+@import 'functions.scss';
 @import 'mixins.scss';
 @import 'fonts.scss';
 @import 'reset.scss';
+@import 'common.scss';
+
+@import 'decoration.scss';
+
+@import 'body.scss';
+
+@import 'header.scss';
+@import 'nav.scss';
+
+@import 'main.scss';
+@import 'breadcrumbs.scss';
+@import 'news.scss';
+@import 'feedback.scss';

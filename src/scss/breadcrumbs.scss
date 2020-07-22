@@ -1,0 +1,30 @@
+.breadcrumbs {}
+
+.breadcrumbs__list {
+    display: flex;
+}
+
+.breadcrumbs__item {
+    position: relative;
+    & + & {
+        &::before {
+            content: '>';
+            margin: 0 10px;
+        }
+    }
+    a {
+        color: inherit;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &_active {
+        pointer-events: none;
+        a {
+            font-weight: normal;
+        }
+    }
+}

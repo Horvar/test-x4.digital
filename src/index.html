@@ -6,7 +6,62 @@
     <title>x4.digital - Тест</title>
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <div class="header__container container">
+            <a href="/" class="header__logo"><img src="img/logo.svg" alt=""></a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item underline nav__item_active"><a href="#">Новости</a></li>
+                    <li class="nav__item underline"><a href="#">Архив</a></li>
+                    <li class="nav__item underline"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__sign-in underline"><a href="#">Войти</a></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container container">
+            <!-- breadcrumbs -->
+            <div class="main__breadcrumbs breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="#">Новости</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item_active"><a href="#">Очень интересная новость</a></li>
+                </ul>
+            </div>
+            <!-- news -->
+            <section class="main__news news">
+                <h1 class="news__title h1">Очень интересная новость</h1>
+                <div class="news__text">
+                    <p>Идейные соображения высшего порядка, а также укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Задача организации, в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Таким образом сложившаяся <a href="#">структура организации</a> требуют определения и уточнения систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры позволяет оценить значение систем массового участия.</p>
+                </div>
+                <img src="img/deco-1.png" alt="" class="news__decoration decoration">
+            </section>
+            <!-- feedback -->
+            <section class="main__feedback feedback">
+                <form action="" class="feedback__form">
+                    <h2 class="feedback__title">Написать отзыв</h2>
+                    <!-- name -->
+                    <label class="feedback__label" for="inputName">Ваше имя</label>
+                    <input class="feedback__input input" name="name" type="text" id="inputName" required>
+                    <!-- email -->
+                    <label class="feedback__label" for="inputEmail">Почта</label>
+                    <input class="feedback__input input" name="email" type="email" id="inputEmail" required>
+                    <!-- phone -->
+                    <label class="feedback__label" for="inputEmail">Телефон</label>
+                    <input class="feedback__input input" name="email" type="text" id="inputEmail" required>
+                    <!-- text -->
+                    <label class="feedback__label" for="inputText">Текст</label>
+                    <textarea class="feedback__textarea input" name="text" id="inputText" cols="30" rows="10"></textarea>
+                    <!-- submit -->
+                    <div class="feedback__submit"><input type="submit" value=""></div>
+                </form>
+                <img src="img/deco-2.png" alt="" class="form__decoration-1 decoration">
+                <img src="img/deco-3.png" alt="" class="form__decoration-2 decoration">
+            </section>
+        </div>
+    </main>
 </body>
 </html>
